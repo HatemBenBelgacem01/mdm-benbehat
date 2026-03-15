@@ -123,7 +123,7 @@ wheels = [
 ]
 
 [[package]]
-name = "mdm003"
+name = "mdm-benbehat"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
