@@ -14,8 +14,8 @@ COPY . .
 RUN uv sync --frozen
 
 # 6. Den Port 5000 für Flask freigeben
-EXPOSE 8080
+EXPOSE 5000
 
 # 7. Die App starten (uv run stellt sicher, dass die venv genutzt wird)
 # --host=0.0.0.0 ist wichtig, damit der Container von außen erreichbar ist
-CMD ["uv", "run", "flask", "run", "--host=0.0.0.0", "--port=8080"]
+CMD ["uv", "run", "flask", "run", "--host=0.0.0.0", "--port=5000"]
